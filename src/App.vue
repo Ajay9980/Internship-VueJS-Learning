@@ -1,6 +1,6 @@
 <script setup>
 import week1Day1 from '../views/week-1-day-1&2.vue';
-import week1Day2 from '../views/week-1-day-3.1.vue';
+import week1Assignment from '../views/week-1-Assignment.vue';
 import week1Day3 from '../views/week-1-day-3.vue';
 </script>
 
@@ -8,7 +8,7 @@ import week1Day3 from '../views/week-1-day-3.vue';
 
 <template>
    <!-- <week1Day1/> -->
-    <!-- <week1Day2 /> -->
+    <week1Assignment/>
     <week1Day3 />
 </template>
 

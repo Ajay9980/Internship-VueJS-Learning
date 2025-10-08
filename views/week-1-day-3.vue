@@ -1,24 +1,39 @@
+<!-- 
+What this code does:
+This code demonstrates two-way data binding between a parent and a custom child component using v-model.
+It takes a username and password input from the user and displays them after submission with an alert.
+
+Topics Covered:
+- Ref() for reactive data
+- Custom component with v-model
+- Event handling using @click
+- Data binding and displaying values
+-->
+
 <script setup>
 import { ref } from 'vue';
 import Child from '../component/Child.vue';
 
+
 const username = ref('')
 const password = ref('')
-const submitted = ref(false)
 
 
-function handleSubmit(){
-    submitted.value = !submitted.value
-    alert(username.value , password.value)
+function submit(){
+alert(`username : ${username.value} and password : ${password.value}`)
 }
+
 </script>
 <template>
 
-    <Child  v-model="username" type="text" label="Username"/>
-    <Child v-model="password" type="password" label="Password"/>
+<Child type="text" label="Username" v-model="username"  />
 
-    <button @click="handleSubmit">Submit</button>
+<Child type="password" label="password" v-model="password"/>
+<br>
 
-    <p v-if="submitted === true" >username : {{ username }} , password : {{ password }}</p>
-
+<button  @click="submit">Submit</button>
+    <div>
+       username :  {{ username }}
+        password : {{ password }}
+    </div>
 </template>
