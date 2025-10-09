@@ -6,6 +6,7 @@ import week1Day31 from '../views/week-1-Day-3.1-slot.vue';
 import week1Day32LifeCycleHooks from '../views/week-1-day-3.2-LifeCycle-Hooks.vue';
 import week1Day4 from '../views/week-1-day-4.vue';
 import smartComponent from '../component/smart.Component.vue';
+import week1Day41Pinia from '../views/week-1-day-4.1-Pinia.vue';
 </script>
 
 
@@ -17,8 +18,9 @@ import smartComponent from '../component/smart.Component.vue';
     <!-- <week1Day31/> -->
      <!-- <week1Day32LifeCycleHooks/> -->
    <!-- <week-1-day-4/> -->
+   <week1Day41Pinia/> 
 
-   <smartComponent/>
+   <!-- <smartComponent/> -->
 
 </template>
 
