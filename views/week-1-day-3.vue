@@ -10,7 +10,7 @@ Topics Covered:
 - Data binding and displaying values
 -->
 
-<script setup>
+<script setup lang="ts">
 import { ref } from 'vue';
 import Child from '../component/Child.vue';
 
@@ -33,7 +33,7 @@ alert(`username : ${username.value} and password : ${password.value}`)
 
 <button  @click="submit">Submit</button>
     <div>
-       username :  {{ username }}
-        password : {{ password }}
+    username :  {{ username }}
+    password : {{ password }}
     </div>
 </template>
